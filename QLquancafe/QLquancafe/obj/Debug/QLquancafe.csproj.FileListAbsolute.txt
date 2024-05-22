@@ -1,0 +1,12 @@
+D:\LEHIEU\c#\QLquancafe\QLquancafe\bin\Debug\QLquancafe.exe.config
+D:\LEHIEU\c#\QLquancafe\QLquancafe\bin\Debug\QLquancafe.exe
+D:\LEHIEU\c#\QLquancafe\QLquancafe\bin\Debug\QLquancafe.pdb
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.AssemblyReference.cache
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.SuggestedBindingRedirects.cache
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.Properties.Resources.resources
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.GenerateResource.cache
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.CoreCompileInputs.cache
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.exe
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.pdb
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.FormDangnhap.resources
+D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.Formchung.resources
