@@ -16,5 +16,22 @@ namespace QLquancafe
         {
             InitializeComponent();
         }
+
+        public bool teep = false;
+        private void Formchung_Load(object sender, EventArgs e)
+        {
+            quảnLýToolStripMenuItem.Visible = teep;
+        }
+
+        private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formquanly formquanly = new Formquanly();
+            formquanly.ShowDialog();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

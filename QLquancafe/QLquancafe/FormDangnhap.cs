@@ -21,7 +21,13 @@ namespace QLquancafe
         {
             this.Hide();
             Formchung formchung = new Formchung();
+            if(tb_tk.Text == "admin" && tb_mk.Text == "admin")
+            {
+                formchung.teep = true;
+            }
             formchung.ShowDialog();
+            tb_tk.Clear();
+            tb_mk.Clear();
             this.Visible = true;
         }
 

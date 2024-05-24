@@ -10,3 +10,16 @@ D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.exe
 D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.pdb
 D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.FormDangnhap.resources
 D:\LEHIEU\c#\QLquancafe\QLquancafe\obj\Debug\QLquancafe.Formchung.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\bin\Debug\QLquancafe.exe.config
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\bin\Debug\QLquancafe.exe
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\bin\Debug\QLquancafe.pdb
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.Formchung.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.FormDangnhap.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.exe
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.pdb
+C:\Users\DELL\OneDrive\Máy tính\ql\QLquancafe\QLquancafe\obj\Debug\QLquancafe.Formquanly.resources

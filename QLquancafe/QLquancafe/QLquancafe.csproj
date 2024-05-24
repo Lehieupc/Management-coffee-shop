@@ -58,6 +58,12 @@
     <Compile Include="Formchung.Designer.cs">
       <DependentUpon>Formchung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formquanly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formquanly.Designer.cs">
+      <DependentUpon>Formquanly.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formchung.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDangnhap.resx">
       <DependentUpon>FormDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formquanly.resx">
+      <DependentUpon>Formquanly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
