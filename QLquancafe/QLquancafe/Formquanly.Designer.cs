@@ -61,12 +61,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tb_tk_nv = new System.Windows.Forms.TextBox();
             this.tb_mk_nv = new System.Windows.Forms.TextBox();
-<<<<<<< HEAD
-=======
-            this.button1 = new System.Windows.Forms.Button();
->>>>>>> d4283724141f0c7e7f297a7b94931f02d3de84bf
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -85,7 +80,6 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -420,18 +414,6 @@
             this.tb_mk_nv.Size = new System.Drawing.Size(195, 22);
             this.tb_mk_nv.TabIndex = 37;
             // 
-<<<<<<< HEAD
-=======
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(290, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
->>>>>>> d4283724141f0c7e7f297a7b94931f02d3de84bf
             // Formquanly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -442,7 +424,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formquanly";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
