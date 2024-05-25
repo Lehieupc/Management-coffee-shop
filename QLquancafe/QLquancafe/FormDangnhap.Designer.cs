@@ -30,14 +30,14 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cb_hien_mk = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tb_mk = new System.Windows.Forms.TextBox();
             this.tb_tk = new System.Windows.Forms.TextBox();
             this.bt_thoat = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.bt_dangnhap = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cb_hien_mk = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(513, 389);
             this.panel1.TabIndex = 7;
+            // 
+            // cb_hien_mk
+            // 
+            this.cb_hien_mk.AutoSize = true;
+            this.cb_hien_mk.Location = new System.Drawing.Point(70, 303);
+            this.cb_hien_mk.Name = "cb_hien_mk";
+            this.cb_hien_mk.Size = new System.Drawing.Size(114, 20);
+            this.cb_hien_mk.TabIndex = 13;
+            this.cb_hien_mk.Text = "Hiện mật khẩu";
+            this.cb_hien_mk.UseVisualStyleBackColor = true;
+            this.cb_hien_mk.CheckedChanged += new System.EventHandler(this.cb_hien_mk_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(179, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(230, 40);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Member login";
             // 
             // tb_mk
             // 
@@ -136,27 +157,6 @@
             this.label1.Size = new System.Drawing.Size(99, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Tài khoản";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(179, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 40);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Member login";
-            // 
-            // cb_hien_mk
-            // 
-            this.cb_hien_mk.AutoSize = true;
-            this.cb_hien_mk.Location = new System.Drawing.Point(70, 303);
-            this.cb_hien_mk.Name = "cb_hien_mk";
-            this.cb_hien_mk.Size = new System.Drawing.Size(114, 20);
-            this.cb_hien_mk.TabIndex = 13;
-            this.cb_hien_mk.Text = "Hiện mật khẩu";
-            this.cb_hien_mk.UseVisualStyleBackColor = true;
-            this.cb_hien_mk.CheckedChanged += new System.EventHandler(this.cb_hien_mk_CheckedChanged);
             // 
             // FormDangnhap
             // 
