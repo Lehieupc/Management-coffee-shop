@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\",
+  "WorkspaceRootPath": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|c:\\users\\minhc\\desktop\\new folder\\management-coffee-shop\\qlquancafe\\qlquancafe\\formchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|c:\\users\\minhc\\desktop\\c#\\management-coffee-shop\\qlquancafe\\qlquancafe\\formchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|solutionrelative:qlquancafe\\formchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\qlquancafe\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|solutionrelative:qlquancafe\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\qlquancafe\\formchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|solutionrelative:qlquancafe\\formchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\qlquancafe\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|c:\\users\\minhc\\desktop\\c#\\management-coffee-shop\\qlquancafe\\qlquancafe\\formquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|solutionrelative:qlquancafe\\formquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\qlquancafe\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|solutionrelative:qlquancafe\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\qlquancafe\\formchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|solutionrelative:qlquancafe\\formchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\qlquancafe\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38BF29D1-0053-4F70-B5B0-9A122359CDE3}|QLquancafe\\QLquancafe.csproj|solutionrelative:qlquancafe\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 292,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +42,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "Formquanly.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formquanly.cs",
+              "RelativeDocumentMoniker": "QLquancafe\\Formquanly.cs",
+              "ToolTip": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formquanly.cs [Design]",
+              "RelativeToolTip": "QLquancafe\\Formquanly.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T16:15:48.182Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Formchung.cs",
-              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs",
+              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs",
               "RelativeDocumentMoniker": "QLquancafe\\Formchung.cs",
-              "ToolTip": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs",
+              "ToolTip": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs",
               "RelativeToolTip": "QLquancafe\\Formchung.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T06:56:28.298Z",
               "EditorCaption": ""
@@ -53,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Formchung.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs",
+              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs",
               "RelativeDocumentMoniker": "QLquancafe\\Formchung.cs",
-              "ToolTip": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs [Design]",
+              "ToolTip": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\Formchung.cs [Design]",
               "RelativeToolTip": "QLquancafe\\Formchung.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T06:56:28.591Z",
@@ -63,26 +79,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FormDangnhap.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs",
+              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs",
               "RelativeDocumentMoniker": "QLquancafe\\FormDangnhap.cs",
-              "ToolTip": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs [Design]",
+              "ToolTip": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs [Design]",
               "RelativeToolTip": "QLquancafe\\FormDangnhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:56:28.676Z"
+              "WhenOpened": "2024-05-22T06:56:28.676Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FormDangnhap.cs",
-              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs",
+              "DocumentMoniker": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs",
               "RelativeDocumentMoniker": "QLquancafe\\FormDangnhap.cs",
-              "ToolTip": "C:\\Users\\minhc\\Desktop\\New folder\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs",
+              "ToolTip": "C:\\Users\\minhc\\Desktop\\C#\\Management-coffee-shop\\QLquancafe\\QLquancafe\\FormDangnhap.cs",
               "RelativeToolTip": "QLquancafe\\FormDangnhap.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAQwBkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-05-22T06:56:28.745Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:56:28.745Z",
+              "EditorCaption": ""
             }
           ]
         },
