@@ -33,5 +33,10 @@ namespace QLquancafe
         {
             this.Close();
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
