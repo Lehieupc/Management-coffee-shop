@@ -17,7 +17,7 @@ namespace QLquancafe
             InitializeComponent();
         }
 
-        public bool teep = false;
+        public bool teep = true;
         private void Formchung_Load(object sender, EventArgs e)
         {
             quảnLýToolStripMenuItem.Visible = teep;

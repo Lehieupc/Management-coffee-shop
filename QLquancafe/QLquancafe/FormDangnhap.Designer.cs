@@ -141,7 +141,7 @@
             this.bt_dangnhap.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_dangnhap.Location = new System.Drawing.Point(234, 319);
             this.bt_dangnhap.Name = "bt_dangnhap";
-            this.bt_dangnhap.Size = new System.Drawing.Size(118, 38);
+            this.bt_dangnhap.Size = new System.Drawing.Size(122, 38);
             this.bt_dangnhap.TabIndex = 10;
             this.bt_dangnhap.Text = "Đăng nhập";
             this.bt_dangnhap.UseVisualStyleBackColor = false;

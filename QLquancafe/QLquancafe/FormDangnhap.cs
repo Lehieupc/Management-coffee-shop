@@ -17,14 +17,17 @@ namespace QLquancafe
         {
             InitializeComponent();
         }
+        string chuoiketnoi = "Data Source = DESKTOP-E9L97H8;" +
+            "Initial Catalog=SQLcafe;" +
+            "Integrated Security=True;";
+        SqlConnection conn = null;
         private void bt_dangnhap_Click(object sender, EventArgs e)
         {
+            conn = new SqlConnection(chuoiketnoi);
+            conn.Open();
+
             this.Hide();
             Formchung formchung = new Formchung();
-            if (tb_tk.Text == "admin" && tb_mk.Text == "admin")
-            {
-                formchung.teep = true;
-            }
             formchung.ShowDialog();
             tb_tk.Clear();
             tb_mk.Clear();
