@@ -105,7 +105,7 @@
             this.quảnLýToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1267, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1261, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -139,7 +139,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1267, 615);
+            this.tabControl1.Size = new System.Drawing.Size(1261, 615);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -148,7 +148,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1259, 586);
+            this.tabPage1.Size = new System.Drawing.Size(1253, 586);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Màn hình chính";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -165,10 +165,9 @@
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1253, 580);
+            this.panel2.Size = new System.Drawing.Size(1247, 580);
             this.panel2.TabIndex = 1;
             // 
             // dataGridView1
@@ -179,7 +178,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 380);
+            this.dataGridView1.Size = new System.Drawing.Size(614, 380);
             this.dataGridView1.TabIndex = 9;
             // 
             // comboBox3
@@ -254,7 +253,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(633, 479);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(620, 101);
+            this.panel3.Size = new System.Drawing.Size(614, 101);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -334,7 +333,6 @@
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -496,7 +494,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1259, 586);
+            this.tabPage2.Size = new System.Drawing.Size(1253, 586);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Thông tin cá nhân";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -508,7 +506,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1253, 580);
+            this.panel1.Size = new System.Drawing.Size(1247, 580);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -698,7 +696,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1267, 643);
+            this.ClientSize = new System.Drawing.Size(1261, 643);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
