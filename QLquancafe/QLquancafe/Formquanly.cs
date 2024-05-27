@@ -72,12 +72,13 @@ namespace QLquancafe
             string select = "select * from Nhanvien where [Vai trò] = 'nv' ";
             command_rows(delete_nv, select);
         }
-        private void dtgv_nv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dtgv_nv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             tb_id.Text = dtgv_nv.Rows[e.RowIndex].Cells[0].Value.ToString();
             tb_hoten.Text = dtgv_nv.Rows[e.RowIndex].Cells[1].Value.ToString();
             dtp_ngaysinh.Text = dtgv_nv.Rows[e.RowIndex].Cells[2].Value.ToString();
-            if (dtgv_nv.Rows[e. RowIndex].Cells[3].Value.ToString() == "Nam")
+            if (dtgv_nv.Rows[e.RowIndex].Cells[3].Value.ToString() == "Nam")
             {
                 rdb_nam.Checked = true;
             }
@@ -90,15 +91,18 @@ namespace QLquancafe
             tb_tk_nv.Text = dtgv_nv.Rows[e.RowIndex].Cells[6].Value.ToString();
             tb_mk_nv.Text = dtgv_nv.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
-
         private void bt_sua_nv_Click(object sender, EventArgs e)
         {
+            string gioitinh = rdb_nam.Checked ? rdb_nam.Text : rdb_nu.Text;
             int row_click = dtgv_nv.CurrentRow.Index;
-            string update_nv = "update Nhanvien where id = '" 
-                + dtgv_nv.Rows[row_click].Cells[0].Value + "'";
+            string update_nv = "update Nhanvien set [Họ tên] = N'" + tb_hoten.Text 
+                + "', [Ngày sinh] = '" + dtp_ngaysinh.Text + "', [Giới tính] = N'" + gioitinh
+                + "', SDT = '" + tb_sdt.Text + "', [Địa chỉ] = N'" + tb_diachi.Text 
+                + "', [Tài khoản] = '" + tb_tk_nv.Text + "', [Mật khẩu] ='" + tb_mk_nv.Text 
+                + "', [Vai trò] = 'nv' " +
+                " where id = '" + dtgv_nv.Rows[row_click].Cells[0].Value + "'";
             string select = "select * from Nhanvien where [Vai trò] = 'nv' ";
             command_rows(update_nv, select);
         }
-
     }
 }

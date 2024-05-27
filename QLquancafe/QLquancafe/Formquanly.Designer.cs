@@ -49,26 +49,26 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dtgv_nv = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.bt_xoa_nv = new System.Windows.Forms.Button();
             this.bt_sua_nv = new System.Windows.Forms.Button();
             this.rdb_nu = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.bt_them_nv = new System.Windows.Forms.Button();
             this.rdb_nam = new System.Windows.Forms.RadioButton();
-            this.tb_hoten = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtp_ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_sdt = new System.Windows.Forms.TextBox();
             this.tb_diachi = new System.Windows.Forms.TextBox();
-            this.tb_id = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tb_tk_nv = new System.Windows.Forms.TextBox();
             this.tb_mk_nv = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtp_ngaysinh = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_hoten = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_id = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dtgv_nl = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -358,7 +358,7 @@
             this.dtgv_nv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgv_nv.Size = new System.Drawing.Size(788, 263);
             this.dtgv_nv.TabIndex = 35;
-            this.dtgv_nv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_nv_CellContentClick);
+            this.dtgv_nv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_nv_CellClick);
             // 
             // tableLayoutPanel1
             // 
@@ -400,17 +400,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 152);
             this.tableLayoutPanel1.TabIndex = 34;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 33);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Họ tên";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // bt_xoa_nv
             // 
             this.bt_xoa_nv.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -446,17 +435,6 @@
             this.rdb_nu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rdb_nu.UseVisualStyleBackColor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 33);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Ngày sinh";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // bt_them_nv
             // 
             this.bt_them_nv.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -482,14 +460,6 @@
             this.rdb_nam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rdb_nam.UseVisualStyleBackColor = true;
             // 
-            // tb_hoten
-            // 
-            this.tb_hoten.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tb_hoten.Location = new System.Drawing.Point(87, 36);
-            this.tb_hoten.Name = "tb_hoten";
-            this.tb_hoten.Size = new System.Drawing.Size(159, 22);
-            this.tb_hoten.TabIndex = 30;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -500,17 +470,6 @@
             this.label3.TabIndex = 29;
             this.label3.Text = "Giới tính";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dtp_ngaysinh
-            // 
-            this.dtp_ngaysinh.CustomFormat = "MM/dd/yyyy";
-            this.dtp_ngaysinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtp_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_ngaysinh.Location = new System.Drawing.Point(87, 69);
-            this.dtp_ngaysinh.Name = "dtp_ngaysinh";
-            this.dtp_ngaysinh.Size = new System.Drawing.Size(159, 22);
-            this.dtp_ngaysinh.TabIndex = 31;
-            this.dtp_ngaysinh.Value = new System.DateTime(2024, 5, 27, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -539,14 +498,6 @@
             this.tb_diachi.Size = new System.Drawing.Size(169, 22);
             this.tb_diachi.TabIndex = 22;
             // 
-            // tb_id
-            // 
-            this.tb_id.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tb_id.Location = new System.Drawing.Point(87, 3);
-            this.tb_id.Name = "tb_id";
-            this.tb_id.Size = new System.Drawing.Size(159, 22);
-            this.tb_id.TabIndex = 23;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -557,17 +508,6 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Địa chỉ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 33);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Id";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -606,6 +546,66 @@
             this.tb_mk_nv.Name = "tb_mk_nv";
             this.tb_mk_nv.Size = new System.Drawing.Size(169, 22);
             this.tb_mk_nv.TabIndex = 37;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Location = new System.Drawing.Point(3, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 33);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Ngày sinh";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtp_ngaysinh
+            // 
+            this.dtp_ngaysinh.CustomFormat = "MM/dd/yyyy";
+            this.dtp_ngaysinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtp_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_ngaysinh.Location = new System.Drawing.Point(87, 69);
+            this.dtp_ngaysinh.Name = "dtp_ngaysinh";
+            this.dtp_ngaysinh.Size = new System.Drawing.Size(159, 22);
+            this.dtp_ngaysinh.TabIndex = 31;
+            this.dtp_ngaysinh.Value = new System.DateTime(2024, 5, 27, 0, 0, 0, 0);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(3, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 33);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Họ tên";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tb_hoten
+            // 
+            this.tb_hoten.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tb_hoten.Location = new System.Drawing.Point(87, 36);
+            this.tb_hoten.Name = "tb_hoten";
+            this.tb_hoten.Size = new System.Drawing.Size(159, 22);
+            this.tb_hoten.TabIndex = 30;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 33);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Id";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tb_id
+            // 
+            this.tb_id.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tb_id.Location = new System.Drawing.Point(87, 3);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.Size = new System.Drawing.Size(159, 22);
+            this.tb_id.TabIndex = 23;
             // 
             // tabPage3
             // 
