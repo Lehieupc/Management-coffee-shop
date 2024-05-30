@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLquancafe
+namespace QLquancafe.user_control
 {
-    public partial class Formchung : Form
+    public partial class UC_qlban : UserControl
     {
-        public Formchung()
+        public UC_qlban()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Formquanly formquanly = new Formquanly();
-            formquanly.ShowDialog();
         }
     }
 }

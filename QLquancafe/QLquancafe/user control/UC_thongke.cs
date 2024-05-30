@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace QLquancafe
 {
-    public partial class Formchung : Form
+    public partial class UC_thongke : UserControl
     {
-        public Formchung()
+        public UC_thongke()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Formquanly formquanly = new Formquanly();
-            formquanly.ShowDialog();
         }
     }
 }

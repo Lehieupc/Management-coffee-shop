@@ -48,3 +48,8 @@ C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancaf
 C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.csproj.CoreCompileInputs.cache
 C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.exe
 C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.pdb
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_menu.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_nv.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_thongke.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_nl.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.user_control.UC_qlban.resources

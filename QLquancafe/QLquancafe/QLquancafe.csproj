@@ -64,12 +64,48 @@
     <Compile Include="Formquanly.Designer.cs">
       <DependentUpon>Formquanly.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ketnoi_SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SQLcafeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SQLcafeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="user control\UC_menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\UC_menu.Designer.cs">
+      <DependentUpon>UC_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\UC_nv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\UC_nv.Designer.cs">
+      <DependentUpon>UC_nv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\UC_qlban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\UC_qlban.Designer.cs">
+      <DependentUpon>UC_qlban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\UC_thongke.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\UC_thongke.Designer.cs">
+      <DependentUpon>UC_thongke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\UC_nl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\UC_nl.Designer.cs">
+      <DependentUpon>UC_nl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Formchung.resx">
       <DependentUpon>Formchung.cs</DependentUpon>
@@ -82,14 +118,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="user control\UC_menu.resx">
+      <DependentUpon>UC_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\UC_nv.resx">
+      <DependentUpon>UC_nv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\UC_qlban.resx">
+      <DependentUpon>UC_qlban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\UC_thongke.resx">
+      <DependentUpon>UC_thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\UC_nl.resx">
+      <DependentUpon>UC_nl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,10 +164,19 @@
     <None Include="Resources\imagelogin.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ok.jpg" />
+    <None Include="Resources\nv.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ok1.png" />
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thong_ke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danh_muc.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

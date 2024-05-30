@@ -1,7 +1,7 @@
 ﻿create database SQLcafe
 use SQLcafe
 create table Nhanvien(
-	id varchar(10),
+	id varchar(10) primary key,
 	[Họ tên] nvarchar(20), 
 	[Ngày sinh] date,
 	[Giới tính] nvarchar(3),
@@ -12,3 +12,11 @@ create table Nhanvien(
 	[Vai trò] nvarchar(10)
 )
 select * from Nhanvien
+create table Menu(
+	[Mã món] varchar(10) primary key,
+	[Tên món] nvarchar(20),
+	[Đơn giá] int,
+	[Danh mục] nvarchar(20)
+)
+select * from Menu
+select [Mật khẩu] from Nhanvien where [Tài khoản] = 'hieune' and [Mật khẩu] = ''

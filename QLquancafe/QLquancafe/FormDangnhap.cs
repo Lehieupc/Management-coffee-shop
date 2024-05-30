@@ -17,21 +17,33 @@ namespace QLquancafe
         {
             InitializeComponent();
         }
-        string chuoiketnoi = "Data Source = DESKTOP-E9L97H8;" +
-            "Initial Catalog=SQLcafe;" +
-            "Integrated Security=True;";
-        SqlConnection conn = null;
+        private bool kt_dn()
+        {
+            Ketnoi_SQL ketnoi = new Ketnoi_SQL();
+            string select = "select [Mật khẩu] from Nhanvien where [Tài khoản] = '"
+            + tb_tk.Text + "' and [Mật khẩu] = '" + tb_mk.Text + "'";
+            if (ketnoi.kt_dang_nhap(select) == "") return false;
+            else if (ketnoi.kt_dang_nhap(select) == tb_mk.Text) return true;
+            else return false;
+        }
         private void bt_dangnhap_Click(object sender, EventArgs e)
         {
-            conn = new SqlConnection(chuoiketnoi);
-            conn.Open();
-
+            
+             if (kt_dn())
+            {
             this.Hide();
             Formchung formchung = new Formchung();
             formchung.ShowDialog();
             tb_tk.Clear();
             tb_mk.Clear();
             this.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu sai","thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                tb_tk.Clear();
+                tb_mk.Clear();
+            }
         }
 
         private void bt_thoat_Click(object sender, EventArgs e)
