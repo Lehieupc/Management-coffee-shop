@@ -79,7 +79,5 @@ namespace QLquancafe
                 " where id = '" + dtgv_nv.Rows[row_click].Cells[0].Value + "'";
             ketnoi.command_sql(update_nv, select);
         }
-
-
     }
 }

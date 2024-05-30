@@ -34,26 +34,26 @@
             this.bt_ql_nv = new System.Windows.Forms.Button();
             this.bt_ql_nl = new System.Windows.Forms.Button();
             this.bt_tk_dt = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.uC_thongke1 = new QLquancafe.UC_thongke();
             this.uC_menu1 = new QLquancafe.UC_menu();
             this.uS_nl1 = new QLquancafe.UC_nl();
             this.uC_nv1 = new QLquancafe.UC_nv();
             this.uC_nl1 = new QLquancafe.UC_nl();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,83 +145,6 @@
             this.bt_tk_dt.UseVisualStyleBackColor = false;
             this.bt_tk_dt.Click += new System.EventHandler(this.bt_tk_dt_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 84);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Admin";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Form";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // uC_thongke1
-            // 
-            this.uC_thongke1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_thongke1.Location = new System.Drawing.Point(200, 0);
-            this.uC_thongke1.Name = "uC_thongke1";
-            this.uC_thongke1.Size = new System.Drawing.Size(824, 505);
-            this.uC_thongke1.TabIndex = 4;
-            // 
-            // uC_menu1
-            // 
-            this.uC_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_menu1.Location = new System.Drawing.Point(200, 0);
-            this.uC_menu1.Name = "uC_menu1";
-            this.uC_menu1.Size = new System.Drawing.Size(824, 505);
-            this.uC_menu1.TabIndex = 3;
-            // 
-            // uS_nl1
-            // 
-            this.uS_nl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uS_nl1.Location = new System.Drawing.Point(200, 0);
-            this.uS_nl1.Name = "uS_nl1";
-            this.uS_nl1.Size = new System.Drawing.Size(824, 505);
-            this.uS_nl1.TabIndex = 2;
-            // 
-            // uC_nv1
-            // 
-            this.uC_nv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.uC_nv1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_nv1.Location = new System.Drawing.Point(200, 0);
-            this.uC_nv1.Name = "uC_nv1";
-            this.uC_nv1.Size = new System.Drawing.Size(824, 505);
-            this.uC_nv1.TabIndex = 1;
-            // 
-            // uC_nl1
-            // 
-            this.uC_nl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_nl1.Location = new System.Drawing.Point(200, 0);
-            this.uC_nl1.Name = "uC_nl1";
-            this.uC_nl1.Size = new System.Drawing.Size(824, 505);
-            this.uC_nl1.TabIndex = 5;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
@@ -270,6 +193,42 @@
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(90, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 84);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Admin";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(90, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Form";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
@@ -281,6 +240,51 @@
             this.pictureBox1.Size = new System.Drawing.Size(90, 100);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // uC_thongke1
+            // 
+            this.uC_thongke1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uC_thongke1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_thongke1.Location = new System.Drawing.Point(200, 0);
+            this.uC_thongke1.Name = "uC_thongke1";
+            this.uC_thongke1.Size = new System.Drawing.Size(824, 505);
+            this.uC_thongke1.TabIndex = 4;
+            // 
+            // uC_menu1
+            // 
+            this.uC_menu1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.uC_menu1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uC_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_menu1.Location = new System.Drawing.Point(200, 0);
+            this.uC_menu1.Name = "uC_menu1";
+            this.uC_menu1.Size = new System.Drawing.Size(824, 505);
+            this.uC_menu1.TabIndex = 3;
+            // 
+            // uS_nl1
+            // 
+            this.uS_nl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uS_nl1.Location = new System.Drawing.Point(200, 0);
+            this.uS_nl1.Name = "uS_nl1";
+            this.uS_nl1.Size = new System.Drawing.Size(824, 505);
+            this.uS_nl1.TabIndex = 2;
+            // 
+            // uC_nv1
+            // 
+            this.uC_nv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uC_nv1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_nv1.Location = new System.Drawing.Point(200, 0);
+            this.uC_nv1.Name = "uC_nv1";
+            this.uC_nv1.Size = new System.Drawing.Size(824, 505);
+            this.uC_nv1.TabIndex = 1;
+            // 
+            // uC_nl1
+            // 
+            this.uC_nl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uC_nl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_nl1.Location = new System.Drawing.Point(200, 0);
+            this.uC_nl1.Name = "uC_nl1";
+            this.uC_nl1.Size = new System.Drawing.Size(824, 505);
+            this.uC_nl1.TabIndex = 5;
             // 
             // Formquanly
             // 
@@ -300,11 +304,11 @@
             this.Load += new System.EventHandler(this.Formquanly_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLquancafe.user_control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +18,19 @@ namespace QLquancafe
         {
             InitializeComponent();
         }
+        Ketnoi_SQL ketnoi = new Ketnoi_SQL();
+        private string id_nv()
+        {
+            string id = "select id from Nhanvien where [Tài khoản] = '"
+            + tb_tk.Text + "'";
+            return ketnoi.command_string(id);
+        }
         private bool kt_dn()
         {
-            Ketnoi_SQL ketnoi = new Ketnoi_SQL();
             string select = "select [Mật khẩu] from Nhanvien where [Tài khoản] = '"
             + tb_tk.Text + "' and [Mật khẩu] = '" + tb_mk.Text + "'";
-            if (ketnoi.kt_dang_nhap(select) == "") return false;
-            else if (ketnoi.kt_dang_nhap(select) == tb_mk.Text) return true;
+            if (ketnoi.command_string(select) == "") return false;
+            else if (ketnoi.command_string(select) == tb_mk.Text) return true;
             else return false;
         }
         private void bt_dangnhap_Click(object sender, EventArgs e)
@@ -31,12 +38,12 @@ namespace QLquancafe
             
              if (kt_dn())
             {
-            this.Hide();
-            Formchung formchung = new Formchung();
-            formchung.ShowDialog();
-            tb_tk.Clear();
-            tb_mk.Clear();
-            this.Visible = true;
+                this.Hide();
+                Formchung formchung = new Formchung(id_nv());
+                formchung.ShowDialog();
+                tb_tk.Clear();
+                tb_mk.Clear();
+                this.Visible = true;
             }
             else
             {
@@ -55,5 +62,7 @@ namespace QLquancafe
         {
             tb_mk.UseSystemPasswordChar = cb_hien_mk.Checked ? false : true;
         }
+
+
     }
 }

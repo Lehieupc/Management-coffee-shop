@@ -41,7 +41,7 @@ namespace QLquancafe
                 sqlData.Fill(dt);
                 conn.Close();
         }
-        public string kt_dang_nhap(string select)
+        public string command_string(string select)
         {
             // hàm để lấy thông tin ra cho vào string
             try

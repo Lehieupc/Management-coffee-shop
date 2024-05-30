@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cb_hien_mk = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,21 +37,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.bt_dangnhap = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.BackgroundImage = global::QLquancafe.Properties.Resources.imagelogin;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(311, 389);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -112,6 +100,8 @@
             // bt_thoat
             // 
             this.bt_thoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.bt_thoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.bt_thoat.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.bt_thoat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_thoat.Location = new System.Drawing.Point(380, 319);
@@ -137,6 +127,7 @@
             // 
             this.bt_dangnhap.AutoSize = true;
             this.bt_dangnhap.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bt_dangnhap.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_dangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.bt_dangnhap.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.bt_dangnhap.Location = new System.Drawing.Point(234, 319);
@@ -158,13 +149,27 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Tài khoản";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.BackgroundImage = global::QLquancafe.Properties.Resources.imagelogin;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(311, 389);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormDangnhap
             // 
+            this.AcceptButton = this.bt_dangnhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CancelButton = this.bt_thoat;
             this.ClientSize = new System.Drawing.Size(824, 389);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -174,9 +179,9 @@
             this.Name = "FormDangnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -185,13 +190,13 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tb_mk;
-        private System.Windows.Forms.TextBox tb_tk;
         private System.Windows.Forms.Button bt_thoat;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bt_dangnhap;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox cb_hien_mk;
+        private System.Windows.Forms.TextBox tb_mk;
+        public System.Windows.Forms.TextBox tb_tk;
     }
 }
 

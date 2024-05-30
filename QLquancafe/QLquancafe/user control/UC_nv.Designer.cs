@@ -68,7 +68,7 @@
             this.dtgv_nv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgv_nv.Size = new System.Drawing.Size(781, 311);
             this.dtgv_nv.TabIndex = 37;
-            this.dtgv_nv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_nv_CellClick);
+            this.dtgv_nv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_nv_CellClick);
             // 
             // tableLayoutPanel1
             // 

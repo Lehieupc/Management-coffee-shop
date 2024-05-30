@@ -107,6 +107,12 @@
     <Compile Include="user control\UC_nl.Designer.cs">
       <DependentUpon>UC_nl.cs</DependentUpon>
     </Compile>
+    <Compile Include="user control\UC_tt_canhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\UC_tt_canhan.Designer.cs">
+      <DependentUpon>UC_tt_canhan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Formchung.resx">
       <DependentUpon>Formchung.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="user control\UC_nl.resx">
       <DependentUpon>UC_nl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\UC_tt_canhan.resx">
+      <DependentUpon>UC_tt_canhan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
