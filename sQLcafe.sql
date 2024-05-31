@@ -19,4 +19,8 @@ create table Menu(
 	[Danh mục] nvarchar(20)
 )
 select * from Menu
-select [Mật khẩu] from Nhanvien where [Tài khoản] = 'hieune' and [Mật khẩu] = ''
+create table Danhmuc(
+	[Mã danh mục] varchar(10),
+	[Tên danh mục] nvarchar(30)
+)
+select * from Danhmuc
