@@ -49,22 +49,26 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.nbr_gg = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bt_thanhtoan = new System.Windows.Forms.Button();
+            this.tb_tien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.nbr_sl = new System.Windows.Forms.NumericUpDown();
             this.cbb_dm = new System.Windows.Forms.ComboBox();
             this.cbb_mon = new System.Windows.Forms.ComboBox();
-            this.bt_chuyen = new System.Windows.Forms.Button();
-            this.cbb_ban = new System.Windows.Forms.ComboBox();
-            this.button19 = new System.Windows.Forms.Button();
+            this.bt_them = new System.Windows.Forms.Button();
+            this.bt_Xoa = new System.Windows.Forms.Button();
+            this.nbr_sl = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -390,6 +394,11 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column4,
+            this.Column3});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 100);
             this.dataGridView1.Name = "dataGridView1";
@@ -398,6 +407,34 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(488, 232);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tên món";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Đơn giá";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Số lượng";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "thành tiền";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // tableLayoutPanel3
             // 
@@ -411,8 +448,8 @@
             this.tableLayoutPanel3.Controls.Add(this.label1, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label3, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.button20, 3, 1);
-            this.tableLayoutPanel3.Controls.Add(this.textBox1, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.bt_thanhtoan, 3, 1);
+            this.tableLayoutPanel3.Controls.Add(this.tb_tien, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 332);
@@ -440,6 +477,7 @@
             this.nbr_gg.Name = "nbr_gg";
             this.nbr_gg.Size = new System.Drawing.Size(140, 22);
             this.nbr_gg.TabIndex = 0;
+            this.nbr_gg.ValueChanged += new System.EventHandler(this.nbr_gg_ValueChanged);
             // 
             // label1
             // 
@@ -474,29 +512,30 @@
             this.label3.Text = "Đang chọn";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button20
+            // bt_thanhtoan
             // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button20.Location = new System.Drawing.Point(343, 53);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(142, 44);
-            this.button20.TabIndex = 4;
-            this.button20.Text = "Thanh toán";
-            this.button20.UseVisualStyleBackColor = false;
+            this.bt_thanhtoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bt_thanhtoan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bt_thanhtoan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_thanhtoan.Location = new System.Drawing.Point(343, 53);
+            this.bt_thanhtoan.Name = "bt_thanhtoan";
+            this.bt_thanhtoan.Size = new System.Drawing.Size(142, 44);
+            this.bt_thanhtoan.TabIndex = 4;
+            this.bt_thanhtoan.Text = "Thanh toán";
+            this.bt_thanhtoan.UseVisualStyleBackColor = false;
+            this.bt_thanhtoan.Click += new System.EventHandler(this.bt_thanhtoan_click);
             // 
-            // textBox1
+            // tb_tien
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(343, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(142, 27);
-            this.textBox1.TabIndex = 5;
+            this.tb_tien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tb_tien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_tien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tb_tien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_tien.Location = new System.Drawing.Point(343, 3);
+            this.tb_tien.Name = "tb_tien";
+            this.tb_tien.ReadOnly = true;
+            this.tb_tien.Size = new System.Drawing.Size(142, 27);
+            this.tb_tien.TabIndex = 5;
             // 
             // label4
             // 
@@ -514,12 +553,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Controls.Add(this.nbr_sl, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.cbb_dm, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.cbb_mon, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.bt_chuyen, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.cbb_ban, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.button19, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.bt_them, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.bt_Xoa, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.nbr_sl, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label6, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -528,14 +567,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(488, 100);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // nbr_sl
-            // 
-            this.nbr_sl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nbr_sl.Location = new System.Drawing.Point(165, 3);
-            this.nbr_sl.Name = "nbr_sl";
-            this.nbr_sl.Size = new System.Drawing.Size(156, 22);
-            this.nbr_sl.TabIndex = 5;
             // 
             // cbb_dm
             // 
@@ -556,42 +587,54 @@
             this.cbb_mon.Size = new System.Drawing.Size(156, 24);
             this.cbb_mon.TabIndex = 1;
             // 
-            // bt_chuyen
+            // bt_them
             // 
-            this.bt_chuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bt_chuyen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bt_chuyen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_chuyen.FlatAppearance.BorderSize = 4;
-            this.bt_chuyen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_chuyen.ForeColor = System.Drawing.Color.Black;
-            this.bt_chuyen.Location = new System.Drawing.Point(327, 3);
-            this.bt_chuyen.Name = "bt_chuyen";
-            this.bt_chuyen.Size = new System.Drawing.Size(158, 44);
-            this.bt_chuyen.TabIndex = 3;
-            this.bt_chuyen.Text = "Chuyển ";
-            this.bt_chuyen.UseVisualStyleBackColor = false;
+            this.bt_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bt_them.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bt_them.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_them.ForeColor = System.Drawing.Color.Black;
+            this.bt_them.Location = new System.Drawing.Point(165, 53);
+            this.bt_them.Name = "bt_them";
+            this.bt_them.Size = new System.Drawing.Size(156, 44);
+            this.bt_them.TabIndex = 2;
+            this.bt_them.Text = "Thêm món";
+            this.bt_them.UseVisualStyleBackColor = false;
+            this.bt_them.Click += new System.EventHandler(this.bt_them_Click);
             // 
-            // cbb_ban
+            // bt_Xoa
             // 
-            this.cbb_ban.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbb_ban.FormattingEnabled = true;
-            this.cbb_ban.Location = new System.Drawing.Point(327, 53);
-            this.cbb_ban.Name = "cbb_ban";
-            this.cbb_ban.Size = new System.Drawing.Size(158, 24);
-            this.cbb_ban.TabIndex = 4;
+            this.bt_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bt_Xoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bt_Xoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bt_Xoa.FlatAppearance.BorderSize = 4;
+            this.bt_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_Xoa.ForeColor = System.Drawing.Color.Black;
+            this.bt_Xoa.Location = new System.Drawing.Point(327, 53);
+            this.bt_Xoa.Name = "bt_Xoa";
+            this.bt_Xoa.Size = new System.Drawing.Size(158, 44);
+            this.bt_Xoa.TabIndex = 3;
+            this.bt_Xoa.Text = "Xóa món";
+            this.bt_Xoa.UseVisualStyleBackColor = false;
+            this.bt_Xoa.Click += new System.EventHandler(this.bt_Xoa_Click);
             // 
-            // button19
+            // nbr_sl
             // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button19.ForeColor = System.Drawing.Color.Black;
-            this.button19.Location = new System.Drawing.Point(165, 53);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(156, 44);
-            this.button19.TabIndex = 2;
-            this.button19.Text = "Thêm món";
-            this.button19.UseVisualStyleBackColor = false;
+            this.nbr_sl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nbr_sl.Location = new System.Drawing.Point(327, 3);
+            this.nbr_sl.Name = "nbr_sl";
+            this.nbr_sl.Size = new System.Drawing.Size(158, 22);
+            this.nbr_sl.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Location = new System.Drawing.Point(165, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(156, 50);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Số lượng :";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // UC_mhc
             // 
@@ -613,6 +656,7 @@
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nbr_gg)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nbr_sl)).EndInit();
             this.ResumeLayout(false);
 
@@ -646,16 +690,20 @@
         private System.Windows.Forms.ComboBox cbb_dm;
         private System.Windows.Forms.ComboBox cbb_mon;
         private System.Windows.Forms.NumericUpDown nbr_sl;
-        private System.Windows.Forms.Button bt_chuyen;
-        private System.Windows.Forms.ComboBox cbb_ban;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button bt_Xoa;
+        private System.Windows.Forms.Button bt_them;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown nbr_gg;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button bt_thanhtoan;
+        private System.Windows.Forms.TextBox tb_tien;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Label label6;
     }
 }

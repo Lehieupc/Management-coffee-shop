@@ -61,6 +61,7 @@ namespace QLquancafe
         }
         public DataTable load_cbb(string select)
         {
+            // hàm để lấy data cho combobox
             conn = new SqlConnection(chuoiketnoi);
             conn.Open();
             SqlCommand sqlCommand = new SqlCommand(select,conn);
