@@ -45,7 +45,5 @@ namespace QLquancafe
             string delete = "delete Danhmuc where [Mã danh mục] = '" + dtgv_dm.CurrentRow.Cells[0].Value + "'";
             ketnoi.command_sql(delete,select);
         }
-
-
     }
 }
