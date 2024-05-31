@@ -51,6 +51,6 @@ C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancaf
 C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_menu.resources
 C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_nv.resources
 C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_thongke.resources
-C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_nl.resources
-C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.user_control.UC_qlban.resources
-C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.user_control.UC_tt_canhan.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.Formtt_ca_nhan.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.user_control.UC_mhc.resources
+C:\Users\DELL\OneDrive\Máy tính\ql\Management-coffee-shop\QLquancafe\QLquancafe\obj\Debug\QLquancafe.UC_dm.resources

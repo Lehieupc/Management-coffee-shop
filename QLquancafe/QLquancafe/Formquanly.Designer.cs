@@ -32,7 +32,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bt_ql_menu = new System.Windows.Forms.Button();
             this.bt_ql_nv = new System.Windows.Forms.Button();
-            this.bt_ql_nl = new System.Windows.Forms.Button();
+            this.bt_dm = new System.Windows.Forms.Button();
             this.bt_tk_dt = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -42,11 +42,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.uC_dm1 = new QLquancafe.UC_dm();
             this.uC_thongke1 = new QLquancafe.UC_thongke();
             this.uC_menu1 = new QLquancafe.UC_menu();
-            this.uS_nl1 = new QLquancafe.UC_nl();
             this.uC_nv1 = new QLquancafe.UC_nv();
-            this.uC_nl1 = new QLquancafe.UC_nl();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -75,7 +74,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.5F));
             this.tableLayoutPanel1.Controls.Add(this.bt_ql_menu, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.bt_ql_nv, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bt_ql_nl, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.bt_dm, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.bt_tk_dt, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 0, 1);
@@ -119,18 +118,18 @@
             this.bt_ql_nv.UseVisualStyleBackColor = false;
             this.bt_ql_nv.Click += new System.EventHandler(this.bt_ql_nv_Click);
             // 
-            // bt_ql_nl
+            // bt_dm
             // 
-            this.bt_ql_nl.BackColor = System.Drawing.Color.White;
-            this.bt_ql_nl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bt_ql_nl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_ql_nl.Location = new System.Drawing.Point(60, 139);
-            this.bt_ql_nl.Name = "bt_ql_nl";
-            this.bt_ql_nl.Size = new System.Drawing.Size(137, 62);
-            this.bt_ql_nl.TabIndex = 2;
-            this.bt_ql_nl.Text = "Quản lý nguyên liệu";
-            this.bt_ql_nl.UseVisualStyleBackColor = false;
-            this.bt_ql_nl.Click += new System.EventHandler(this.bt_ql_nl_Click);
+            this.bt_dm.BackColor = System.Drawing.Color.White;
+            this.bt_dm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bt_dm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_dm.Location = new System.Drawing.Point(60, 139);
+            this.bt_dm.Name = "bt_dm";
+            this.bt_dm.Size = new System.Drawing.Size(137, 62);
+            this.bt_dm.TabIndex = 2;
+            this.bt_dm.Text = "Quản lý danh mục";
+            this.bt_dm.UseVisualStyleBackColor = false;
+            this.bt_dm.Click += new System.EventHandler(this.bt_dm_Click);
             // 
             // bt_tk_dt
             // 
@@ -241,6 +240,15 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // uC_dm1
+            // 
+            this.uC_dm1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_dm1.Location = new System.Drawing.Point(200, 0);
+            this.uC_dm1.Name = "uC_dm1";
+            this.uC_dm1.Size = new System.Drawing.Size(824, 505);
+            this.uC_dm1.TabIndex = 5;
+            this.uC_dm1.Visible = false;
+            // 
             // uC_thongke1
             // 
             this.uC_thongke1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -249,6 +257,7 @@
             this.uC_thongke1.Name = "uC_thongke1";
             this.uC_thongke1.Size = new System.Drawing.Size(824, 505);
             this.uC_thongke1.TabIndex = 4;
+            this.uC_thongke1.Visible = false;
             // 
             // uC_menu1
             // 
@@ -260,14 +269,6 @@
             this.uC_menu1.Size = new System.Drawing.Size(824, 505);
             this.uC_menu1.TabIndex = 3;
             // 
-            // uS_nl1
-            // 
-            this.uS_nl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uS_nl1.Location = new System.Drawing.Point(200, 0);
-            this.uS_nl1.Name = "uS_nl1";
-            this.uS_nl1.Size = new System.Drawing.Size(824, 505);
-            this.uS_nl1.TabIndex = 2;
-            // 
             // uC_nv1
             // 
             this.uC_nv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -277,31 +278,20 @@
             this.uC_nv1.Size = new System.Drawing.Size(824, 505);
             this.uC_nv1.TabIndex = 1;
             // 
-            // uC_nl1
-            // 
-            this.uC_nl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.uC_nl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_nl1.Location = new System.Drawing.Point(200, 0);
-            this.uC_nl1.Name = "uC_nl1";
-            this.uC_nl1.Size = new System.Drawing.Size(824, 505);
-            this.uC_nl1.TabIndex = 5;
-            // 
             // Formquanly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1024, 505);
-            this.Controls.Add(this.uC_nl1);
+            this.Controls.Add(this.uC_dm1);
             this.Controls.Add(this.uC_thongke1);
             this.Controls.Add(this.uC_menu1);
-            this.Controls.Add(this.uS_nl1);
             this.Controls.Add(this.uC_nv1);
             this.Controls.Add(this.panel1);
             this.Name = "Formquanly";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formquanly";
-            this.Load += new System.EventHandler(this.Formquanly_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -324,15 +314,14 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button bt_ql_menu;
         private System.Windows.Forms.Button bt_ql_nv;
-        private System.Windows.Forms.Button bt_ql_nl;
+        private System.Windows.Forms.Button bt_dm;
         private System.Windows.Forms.Button bt_tk_dt;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private UC_nl uS_nl1;
         private UC_menu uC_menu1;
         private UC_thongke uC_thongke1;
-        private UC_nl uC_nl1;
+        private UC_dm uC_dm1;
     }
 }

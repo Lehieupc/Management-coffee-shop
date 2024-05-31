@@ -292,6 +292,7 @@
             this.Name = "UC_menu";
             this.Size = new System.Drawing.Size(766, 457);
             this.Load += new System.EventHandler(this.UC_menu_Load);
+            this.VisibleChanged += new System.EventHandler(this.UC_menu_VisibleChanged);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

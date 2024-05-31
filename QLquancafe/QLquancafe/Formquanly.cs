@@ -45,17 +45,16 @@ namespace QLquancafe
             uC_nv1.Visible = true;
         }
 
-        private void bt_ql_nl_Click(object sender, EventArgs e)
-        {
-            Uc_control_hide();
-            uC_nl1.Visible = true;
-        }
-
         private void bt_tk_dt_Click(object sender, EventArgs e)
         {
             Uc_control_hide();
             uC_thongke1.Visible = true;
         }
 
+        private void bt_dm_Click(object sender, EventArgs e)
+        {
+            Uc_control_hide();
+            uC_dm1.Visible = true;
+        }
     }
 }

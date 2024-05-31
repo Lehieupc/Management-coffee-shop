@@ -43,9 +43,8 @@ namespace QLquancafe
 
         private void bt_xoa_nv_Click(object sender, EventArgs e)
         {
-            int row_click = dtgv_nv.CurrentRow.Index;
             string delete_nv = "delete Nhanvien where id = '"
-                + dtgv_nv.Rows[row_click].Cells[0].Value + "'";
+                + dtgv_nv.CurrentRow.Cells[0].Value + "'";
             ketnoi.command_sql(delete_nv, select);
         }
 
@@ -70,13 +69,12 @@ namespace QLquancafe
         private void bt_sua_nv_Click(object sender, EventArgs e)
         {
             string gioitinh = rdb_nam.Checked ? rdb_nam.Text : rdb_nu.Text;
-            int row_click = dtgv_nv.CurrentRow.Index;
             string update_nv = "update Nhanvien set [Họ tên] = N'" + tb_hoten.Text
                 + "', [Ngày sinh] = '" + dtp_ngaysinh.Text + "', [Giới tính] = N'" + gioitinh
                 + "', SDT = '" + tb_sdt.Text + "', [Địa chỉ] = N'" + tb_diachi.Text
                 + "', [Tài khoản] = '" + tb_tk_nv.Text + "', [Mật khẩu] ='" + tb_mk_nv.Text
                 + "', [Vai trò] = 'nv' " +
-                " where id = '" + dtgv_nv.Rows[row_click].Cells[0].Value + "'";
+                " where id = '" + dtgv_nv.CurrentRow.Cells[0].Value + "'";
             ketnoi.command_sql(update_nv, select);
         }
     }

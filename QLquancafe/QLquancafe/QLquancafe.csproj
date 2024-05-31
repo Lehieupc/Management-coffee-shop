@@ -64,6 +64,12 @@
     <Compile Include="Formquanly.Designer.cs">
       <DependentUpon>Formquanly.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formtt_ca_nhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formtt_ca_nhan.Designer.cs">
+      <DependentUpon>Formtt_ca_nhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ketnoi_SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,11 +95,11 @@
     <Compile Include="user control\UC_nv.Designer.cs">
       <DependentUpon>UC_nv.cs</DependentUpon>
     </Compile>
-    <Compile Include="user control\UC_qlban.cs">
+    <Compile Include="user control\UC_mhc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user control\UC_qlban.Designer.cs">
-      <DependentUpon>UC_qlban.cs</DependentUpon>
+    <Compile Include="user control\UC_mhc.Designer.cs">
+      <DependentUpon>UC_mhc.cs</DependentUpon>
     </Compile>
     <Compile Include="user control\UC_thongke.cs">
       <SubType>UserControl</SubType>
@@ -101,17 +107,11 @@
     <Compile Include="user control\UC_thongke.Designer.cs">
       <DependentUpon>UC_thongke.cs</DependentUpon>
     </Compile>
-    <Compile Include="user control\UC_nl.cs">
+    <Compile Include="user control\UC_dm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="user control\UC_nl.Designer.cs">
-      <DependentUpon>UC_nl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="user control\UC_tt_canhan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="user control\UC_tt_canhan.Designer.cs">
-      <DependentUpon>UC_tt_canhan.cs</DependentUpon>
+    <Compile Include="user control\UC_dm.Designer.cs">
+      <DependentUpon>UC_dm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Formchung.resx">
       <DependentUpon>Formchung.cs</DependentUpon>
@@ -121,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formquanly.resx">
       <DependentUpon>Formquanly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formtt_ca_nhan.resx">
+      <DependentUpon>Formtt_ca_nhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,17 +136,14 @@
     <EmbeddedResource Include="user control\UC_nv.resx">
       <DependentUpon>UC_nv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user control\UC_qlban.resx">
-      <DependentUpon>UC_qlban.cs</DependentUpon>
+    <EmbeddedResource Include="user control\UC_mhc.resx">
+      <DependentUpon>UC_mhc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user control\UC_thongke.resx">
       <DependentUpon>UC_thongke.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="user control\UC_nl.resx">
-      <DependentUpon>UC_nl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="user control\UC_tt_canhan.resx">
-      <DependentUpon>UC_tt_canhan.cs</DependentUpon>
+    <EmbeddedResource Include="user control\UC_dm.resx">
+      <DependentUpon>UC_dm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -186,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\danh_muc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_chung.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

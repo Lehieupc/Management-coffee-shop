@@ -20,10 +20,7 @@ namespace QLquancafe
             InitializeComponent();
             _id = id;
         }
-        public Formchung()
-        {
-            InitializeComponent();
-        }
+        public string _id;
         private void Uc_control_hide()
         {
             foreach (Control control in this.Controls)
@@ -34,41 +31,20 @@ namespace QLquancafe
                 }
             }
         }
-        Ketnoi_SQL ketnoi_SQL = new Ketnoi_SQL();
-        public string _id;
-        private void hienthi_tt()
+        private void bt_mhc_Click(object sender, EventArgs e)
         {
-            string hoten = "select [Họ tên] from Nhanvien where id = '" + _id + "'";
-            string ngaysinh = "select [Ngày sinh] from Nhanvien where id = '" + _id + "'";
-            string gioitinh = "select [Giới tính] from Nhanvien where id = '" + _id + "'";
-            string sdt = "select [SDT] from Nhanvien where id = '" + _id + "'";
-            string diachi = "select [Địa chỉ] from Nhanvien where id = '" + _id + "'";
-            uC_tt_canhan1.tb_hoten.Text = ketnoi_SQL.command_string(hoten);
-            uC_tt_canhan1.dtp_ngaysinh.Text = ketnoi_SQL.command_string(ngaysinh);
-            uC_tt_canhan1.cbb_gioitinh.Text = ketnoi_SQL.command_string(gioitinh);
-            uC_tt_canhan1.tb_sdt.Text = ketnoi_SQL.command_string(sdt);
-            uC_tt_canhan1.tb_diachi.Text = ketnoi_SQL.command_string(diachi);
+            Uc_control_hide();
+            uC_mhc1.Visible = true;
         }
-        private void Formchung_Load(object sender, EventArgs e)
+        private void bt_ttcn_Click(object sender, EventArgs e)
         {
-            hienthi_tt();
+            Formtt_ca_nhan formtt_Ca_Nhan = new Formtt_ca_nhan(_id);
+            formtt_Ca_Nhan.ShowDialog();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void bt_quanly_Click(object sender, EventArgs e)
         {
             Formquanly formquanly = new Formquanly();
             formquanly.ShowDialog();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Uc_control_hide();
-            uC_qlban1.Visible = true;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Uc_control_hide();
-            uC_tt_canhan1.Visible = true;
         }
     }
 }

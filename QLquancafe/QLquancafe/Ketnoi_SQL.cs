@@ -49,13 +49,25 @@ namespace QLquancafe
                 conn = new SqlConnection(chuoiketnoi);
                 conn.Open();
                 SqlCommand command = new SqlCommand(select, conn);
-                return command.ExecuteScalar().ToString();
+                string chuoi = command.ExecuteScalar().ToString();
+                conn.Close();
+                return chuoi;
             }
             catch (NullReferenceException)
             {
                 return null;
             }
 
+        }
+        public DataTable load_cbb(string select)
+        {
+            conn = new SqlConnection(chuoiketnoi);
+            conn.Open();
+            SqlCommand sqlCommand = new SqlCommand(select,conn);
+            dt.Clear();
+            dt.Load(sqlCommand.ExecuteReader());
+            conn.Close();
+            return dt;
         }
     }
 }

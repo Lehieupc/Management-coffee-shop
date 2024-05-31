@@ -25,6 +25,16 @@ namespace QLquancafe
             + tb_tk.Text + "'";
             return ketnoi.command_string(id);
         }
+        private bool role_member()
+        {
+            string role = "select [Vai trò] from Nhanvien where [Tài khoản] = '"
+            + tb_tk.Text + "'";
+            if (ketnoi.command_string(role) == "admin")
+            {
+                return true;
+            }
+            else return false;
+        }
         private bool kt_dn()
         {
             string select = "select [Mật khẩu] from Nhanvien where [Tài khoản] = '"
@@ -40,6 +50,7 @@ namespace QLquancafe
             {
                 this.Hide();
                 Formchung formchung = new Formchung(id_nv());
+                formchung.bt_quanly.Visible = role_member() ? true : false;
                 formchung.ShowDialog();
                 tb_tk.Clear();
                 tb_mk.Clear();

@@ -1,6 +1,6 @@
 ﻿namespace QLquancafe.user_control
 {
-    partial class UC_qlban
+    partial class UC_mhc
     {
         /// <summary> 
         /// Required designer variable.
@@ -51,7 +51,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.nbr_gg = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,11 +59,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.nbr_sl = new System.Windows.Forms.NumericUpDown();
+            this.cbb_dm = new System.Windows.Forms.ComboBox();
+            this.cbb_mon = new System.Windows.Forms.ComboBox();
             this.bt_chuyen = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbb_ban = new System.Windows.Forms.ComboBox();
             this.button19 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -72,9 +72,9 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nbr_gg)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nbr_sl)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -146,6 +146,7 @@
             this.button18.TabIndex = 17;
             this.button18.Text = "bàn 18";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.ban_click);
             // 
             // button17
             // 
@@ -159,6 +160,7 @@
             this.button17.TabIndex = 16;
             this.button17.Text = "bàn 17";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.ban_click);
             // 
             // button16
             // 
@@ -172,6 +174,7 @@
             this.button16.TabIndex = 15;
             this.button16.Text = "bàn 16";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.ban_click);
             // 
             // button15
             // 
@@ -185,6 +188,7 @@
             this.button15.TabIndex = 14;
             this.button15.Text = "bàn 15";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.ban_click);
             // 
             // button14
             // 
@@ -198,6 +202,7 @@
             this.button14.TabIndex = 13;
             this.button14.Text = "bàn 14";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.ban_click);
             // 
             // button13
             // 
@@ -211,6 +216,7 @@
             this.button13.TabIndex = 12;
             this.button13.Text = "bàn 13";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.ban_click);
             // 
             // button12
             // 
@@ -224,6 +230,7 @@
             this.button12.TabIndex = 11;
             this.button12.Text = "bàn 12";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.ban_click);
             // 
             // button11
             // 
@@ -237,6 +244,7 @@
             this.button11.TabIndex = 10;
             this.button11.Text = "bàn 11";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.ban_click);
             // 
             // button10
             // 
@@ -250,6 +258,7 @@
             this.button10.TabIndex = 9;
             this.button10.Text = "bàn 10";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.ban_click);
             // 
             // button9
             // 
@@ -263,6 +272,7 @@
             this.button9.TabIndex = 8;
             this.button9.Text = "bàn 9";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.ban_click);
             // 
             // button8
             // 
@@ -276,6 +286,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "bàn 8";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.ban_click);
             // 
             // button7
             // 
@@ -289,6 +300,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "bàn 7";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.ban_click);
             // 
             // button6
             // 
@@ -302,6 +314,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "bàn 6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.ban_click);
             // 
             // button5
             // 
@@ -315,6 +328,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "bàn 5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.ban_click);
             // 
             // button1
             // 
@@ -328,6 +342,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "bàn 1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.ban_click);
             // 
             // button2
             // 
@@ -341,6 +356,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "bàn 2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.ban_click);
             // 
             // button3
             // 
@@ -354,6 +370,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "bàn 3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.ban_click);
             // 
             // button4
             // 
@@ -367,6 +384,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "bàn 4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.ban_click);
             // 
             // dataGridView1
             // 
@@ -389,7 +407,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.Controls.Add(this.label5, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.numericUpDown2, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.nbr_gg, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label3, 1, 1);
@@ -415,13 +433,13 @@
             this.label5.Size = new System.Drawing.Size(42, 50);
             this.label5.TabIndex = 7;
             // 
-            // numericUpDown2
+            // nbr_gg
             // 
-            this.numericUpDown2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown2.Location = new System.Drawing.Point(197, 3);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(140, 22);
-            this.numericUpDown2.TabIndex = 0;
+            this.nbr_gg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nbr_gg.Location = new System.Drawing.Point(197, 3);
+            this.nbr_gg.Name = "nbr_gg";
+            this.nbr_gg.Size = new System.Drawing.Size(140, 22);
+            this.nbr_gg.TabIndex = 0;
             // 
             // label1
             // 
@@ -473,9 +491,11 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(343, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 22);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(142, 27);
             this.textBox1.TabIndex = 5;
             // 
             // label4
@@ -494,11 +514,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.nbr_sl, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.cbb_dm, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.cbb_mon, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.bt_chuyen, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox3, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cbb_ban, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.button19, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -509,31 +529,32 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(488, 100);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // numericUpDown1
+            // nbr_sl
             // 
-            this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown1.Location = new System.Drawing.Point(165, 3);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(156, 22);
-            this.numericUpDown1.TabIndex = 5;
+            this.nbr_sl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nbr_sl.Location = new System.Drawing.Point(165, 3);
+            this.nbr_sl.Name = "nbr_sl";
+            this.nbr_sl.Size = new System.Drawing.Size(156, 22);
+            this.nbr_sl.TabIndex = 5;
             // 
-            // comboBox1
+            // cbb_dm
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(156, 24);
-            this.comboBox1.TabIndex = 0;
+            this.cbb_dm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbb_dm.FormattingEnabled = true;
+            this.cbb_dm.Location = new System.Drawing.Point(3, 3);
+            this.cbb_dm.Name = "cbb_dm";
+            this.cbb_dm.Size = new System.Drawing.Size(156, 24);
+            this.cbb_dm.TabIndex = 0;
+            this.cbb_dm.SelectedIndexChanged += new System.EventHandler(this.cbb_dm_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cbb_mon
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 53);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(156, 24);
-            this.comboBox2.TabIndex = 1;
+            this.cbb_mon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbb_mon.FormattingEnabled = true;
+            this.cbb_mon.Location = new System.Drawing.Point(3, 53);
+            this.cbb_mon.Name = "cbb_mon";
+            this.cbb_mon.Size = new System.Drawing.Size(156, 24);
+            this.cbb_mon.TabIndex = 1;
             // 
             // bt_chuyen
             // 
@@ -550,14 +571,14 @@
             this.bt_chuyen.Text = "Chuyển ";
             this.bt_chuyen.UseVisualStyleBackColor = false;
             // 
-            // comboBox3
+            // cbb_ban
             // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(327, 53);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(158, 24);
-            this.comboBox3.TabIndex = 4;
+            this.cbb_ban.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbb_ban.FormattingEnabled = true;
+            this.cbb_ban.Location = new System.Drawing.Point(327, 53);
+            this.cbb_ban.Name = "cbb_ban";
+            this.cbb_ban.Size = new System.Drawing.Size(158, 24);
+            this.cbb_ban.TabIndex = 4;
             // 
             // button19
             // 
@@ -572,14 +593,16 @@
             this.button19.Text = "Thêm món";
             this.button19.UseVisualStyleBackColor = false;
             // 
-            // UC_qlban
+            // UC_mhc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.splitContainer1);
-            this.Name = "UC_qlban";
+            this.Name = "UC_mhc";
             this.Size = new System.Drawing.Size(856, 432);
+            this.Load += new System.EventHandler(this.UC_mhc_Load);
+            this.VisibleChanged += new System.EventHandler(this.UC_mhc_VisibleChanged);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -588,9 +611,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nbr_gg)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nbr_sl)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -620,14 +643,14 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ComboBox cbb_dm;
+        private System.Windows.Forms.ComboBox cbb_mon;
+        private System.Windows.Forms.NumericUpDown nbr_sl;
         private System.Windows.Forms.Button bt_chuyen;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbb_ban;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nbr_gg;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
