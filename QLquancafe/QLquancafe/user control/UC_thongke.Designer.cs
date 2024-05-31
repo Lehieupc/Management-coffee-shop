@@ -32,13 +32,14 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button7 = new System.Windows.Forms.Button();
+            this.bt_tk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_doanhthu)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgv_doanhthu
             // 
+            this.dtgv_doanhthu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_doanhthu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_doanhthu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgv_doanhthu.Location = new System.Drawing.Point(0, 54);
@@ -56,7 +57,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.5F));
             this.tableLayoutPanel4.Controls.Add(this.dateTimePicker1, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.dateTimePicker2, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.button7, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bt_tk, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -67,8 +68,9 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "yyyy/MM/dd";
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(3, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(331, 22);
@@ -76,22 +78,24 @@
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CustomFormat = "yyyy/MM/dd";
             this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(458, 3);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(332, 22);
             this.dateTimePicker2.TabIndex = 1;
             // 
-            // button7
+            // bt_tk
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.Location = new System.Drawing.Point(340, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(112, 48);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Thống kê";
-            this.button7.UseVisualStyleBackColor = true;
+            this.bt_tk.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bt_tk.Location = new System.Drawing.Point(340, 3);
+            this.bt_tk.Name = "bt_tk";
+            this.bt_tk.Size = new System.Drawing.Size(112, 48);
+            this.bt_tk.TabIndex = 2;
+            this.bt_tk.Text = "Thống kê";
+            this.bt_tk.UseVisualStyleBackColor = true;
+            this.bt_tk.Click += new System.EventHandler(this.bt_tk_Click);
             // 
             // UC_thongke
             // 
@@ -113,6 +117,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button bt_tk;
     }
 }

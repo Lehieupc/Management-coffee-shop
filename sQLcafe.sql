@@ -24,3 +24,15 @@ create table Danhmuc(
 	[Tên danh mục] nvarchar(30)
 )
 select * from Danhmuc
+create table Hoadon(
+	[Mã hóa đơn] int identity(1,1) primary key,
+	[Tổng tiền] int,
+	CreatedAt DATETIME DEFAULT GETDATE()
+)
+select * from Hoadon
+create table DSbanchay(
+	[Tên món] nvarchar(30),
+	[Số lượng] int
+)
+select * from DSbanchay
+select * from Hoadon where CreatedAt >= '2024-06-01 ' and CreatedAt <= '2024-07-01'

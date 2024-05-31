@@ -16,5 +16,13 @@ namespace QLquancafe
         {
             InitializeComponent();
         }
+
+        private void bt_tk_Click(object sender, EventArgs e)
+        {
+            Ketnoi_SQL ketnoi_SQL = new Ketnoi_SQL();
+            string select = "select * from Hoadon where CreatedAt >= '" +
+                dateTimePicker1.Text + "' and CreatedAt < '" + dateTimePicker2.Text + "'";
+            dtgv_doanhthu.DataSource = ketnoi_SQL.datatable(select);
+        }
     }
 }

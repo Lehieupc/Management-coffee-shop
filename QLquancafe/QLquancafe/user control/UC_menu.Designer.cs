@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dtgv_menu = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.tb_dongia_mon = new System.Windows.Forms.TextBox();
@@ -43,16 +42,14 @@
             this.bt_them_mon = new System.Windows.Forms.Button();
             this.bt_sua_mon = new System.Windows.Forms.Button();
             this.bt_xoa_mon = new System.Windows.Forms.Button();
-            this.bt_xem_mon = new System.Windows.Forms.Button();
-            this.bt_timkiem_mon = new System.Windows.Forms.Button();
-            this.tb_timkiem_mon = new System.Windows.Forms.TextBox();
+            this.dtgv_menu = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_menu)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_menu)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -71,20 +68,6 @@
             this.splitContainer1.Size = new System.Drawing.Size(766, 395);
             this.splitContainer1.SplitterDistance = 392;
             this.splitContainer1.TabIndex = 7;
-            // 
-            // dtgv_menu
-            // 
-            this.dtgv_menu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgv_menu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtgv_menu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_menu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgv_menu.Location = new System.Drawing.Point(0, 0);
-            this.dtgv_menu.Name = "dtgv_menu";
-            this.dtgv_menu.RowHeadersWidth = 51;
-            this.dtgv_menu.RowTemplate.Height = 24;
-            this.dtgv_menu.Size = new System.Drawing.Size(392, 395);
-            this.dtgv_menu.TabIndex = 0;
-            this.dtgv_menu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_menu_CellClick);
             // 
             // tableLayoutPanel3
             // 
@@ -193,18 +176,15 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 6;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.Controls.Add(this.bt_them_mon, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.bt_sua_mon, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.bt_xoa_mon, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.bt_xem_mon, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.bt_timkiem_mon, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tb_timkiem_mon, 4, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -219,7 +199,7 @@
             this.bt_them_mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.bt_them_mon.Location = new System.Drawing.Point(3, 3);
             this.bt_them_mon.Name = "bt_them_mon";
-            this.bt_them_mon.Size = new System.Drawing.Size(85, 56);
+            this.bt_them_mon.Size = new System.Drawing.Size(121, 56);
             this.bt_them_mon.TabIndex = 0;
             this.bt_them_mon.Text = "Thêm";
             this.bt_them_mon.UseVisualStyleBackColor = true;
@@ -229,9 +209,9 @@
             // 
             this.bt_sua_mon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_sua_mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_sua_mon.Location = new System.Drawing.Point(94, 3);
+            this.bt_sua_mon.Location = new System.Drawing.Point(130, 3);
             this.bt_sua_mon.Name = "bt_sua_mon";
-            this.bt_sua_mon.Size = new System.Drawing.Size(85, 56);
+            this.bt_sua_mon.Size = new System.Drawing.Size(121, 56);
             this.bt_sua_mon.TabIndex = 1;
             this.bt_sua_mon.Text = "Sửa";
             this.bt_sua_mon.UseVisualStyleBackColor = true;
@@ -241,46 +221,27 @@
             // 
             this.bt_xoa_mon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_xoa_mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_xoa_mon.Location = new System.Drawing.Point(185, 3);
+            this.bt_xoa_mon.Location = new System.Drawing.Point(257, 3);
             this.bt_xoa_mon.Name = "bt_xoa_mon";
-            this.bt_xoa_mon.Size = new System.Drawing.Size(85, 56);
+            this.bt_xoa_mon.Size = new System.Drawing.Size(121, 56);
             this.bt_xoa_mon.TabIndex = 2;
             this.bt_xoa_mon.Text = "Xóa";
             this.bt_xoa_mon.UseVisualStyleBackColor = true;
             this.bt_xoa_mon.Click += new System.EventHandler(this.bt_xoa_mon_Click);
             // 
-            // bt_xem_mon
+            // dtgv_menu
             // 
-            this.bt_xem_mon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bt_xem_mon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bt_xem_mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_xem_mon.Location = new System.Drawing.Point(276, 3);
-            this.bt_xem_mon.Name = "bt_xem_mon";
-            this.bt_xem_mon.Size = new System.Drawing.Size(85, 56);
-            this.bt_xem_mon.TabIndex = 3;
-            this.bt_xem_mon.Text = "Xem";
-            this.bt_xem_mon.UseVisualStyleBackColor = true;
-            // 
-            // bt_timkiem_mon
-            // 
-            this.bt_timkiem_mon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bt_timkiem_mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bt_timkiem_mon.Location = new System.Drawing.Point(673, 3);
-            this.bt_timkiem_mon.Name = "bt_timkiem_mon";
-            this.bt_timkiem_mon.Size = new System.Drawing.Size(90, 56);
-            this.bt_timkiem_mon.TabIndex = 4;
-            this.bt_timkiem_mon.Text = "Tìm kiếm";
-            this.bt_timkiem_mon.UseVisualStyleBackColor = true;
-            this.bt_timkiem_mon.Click += new System.EventHandler(this.bt_timkiem_mon_Click);
-            // 
-            // tb_timkiem_mon
-            // 
-            this.tb_timkiem_mon.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tb_timkiem_mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_timkiem_mon.Location = new System.Drawing.Point(367, 33);
-            this.tb_timkiem_mon.Name = "tb_timkiem_mon";
-            this.tb_timkiem_mon.Size = new System.Drawing.Size(300, 26);
-            this.tb_timkiem_mon.TabIndex = 5;
+            this.dtgv_menu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgv_menu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dtgv_menu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_menu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgv_menu.Location = new System.Drawing.Point(0, 0);
+            this.dtgv_menu.Name = "dtgv_menu";
+            this.dtgv_menu.RowHeadersWidth = 51;
+            this.dtgv_menu.RowTemplate.Height = 24;
+            this.dtgv_menu.Size = new System.Drawing.Size(392, 395);
+            this.dtgv_menu.TabIndex = 0;
+            this.dtgv_menu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_menu_CellClick);
             // 
             // UC_menu
             // 
@@ -297,11 +258,10 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_menu)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_menu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,7 +269,6 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView dtgv_menu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_dongia_mon;
@@ -321,10 +280,8 @@
         private System.Windows.Forms.Button bt_them_mon;
         private System.Windows.Forms.Button bt_sua_mon;
         private System.Windows.Forms.Button bt_xoa_mon;
-        private System.Windows.Forms.Button bt_xem_mon;
-        private System.Windows.Forms.Button bt_timkiem_mon;
-        private System.Windows.Forms.TextBox tb_timkiem_mon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbb_danh_muc;
+        private System.Windows.Forms.DataGridView dtgv_menu;
     }
 }

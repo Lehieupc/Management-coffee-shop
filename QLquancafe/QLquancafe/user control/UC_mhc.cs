@@ -102,6 +102,13 @@ namespace QLquancafe.user_control
         private void bt_thanhtoan_click(object sender, EventArgs e)
         {
             button_nguoi_ngoi.BackColor = Color.FromArgb(192, 255, 255);
+            Ketnoi_SQL ketnoi_hoadon = new Ketnoi_SQL();
+            string insert_hoadon = "insert into Hoadon([Tổng tiền],CreatedAt) values('" + tb_tien.Text + "',"
+                + "SYSDATETIME())";
+            string select_hoadon = "select * from Hoadon";
+            ketnoi_hoadon.command_sql(insert_hoadon,select_hoadon);
+            tb_tien.Text = "0";
+            dataGridView1.Rows.Clear();
         }
     }
 }
